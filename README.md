@@ -43,16 +43,20 @@ The response is a JSON object like:
 	
 The response should be like below:
 
-	=================================test session starts===============================================
-
+	================================================================ test session starts ==================================================================
 	platform linux -- Python 3.8.5, pytest-6.2.3, py-1.10.0, pluggy-0.13.1 -- /usr/bin/python3
 	cachedir: .pytest_cache
-	collected 4 items                                                                                                                                                                                         
+	rootdir: /Python_Currency_Converter/app
+	collected 5 items                                                                                                                                                                                         
 
-	test_api.py::TestMethods::test_dest_currency PASSED                                                                                                                                                 [ 25%]
-	test_api.py::TestMethods::test_negative_amount PASSED                                                                                                                                               [ 50%]
-	test_api.py::TestMethods::test_same_src_dest_currency PASSED                                                                                                                                        [ 75%]
-	test_api.py::TestMethods::test_src_currency PASSED                                                                                                                                                  [100%]
-	================================= 4 passed in 1.19s===================================================
+	test_api.py::TestMethods::test_dest_currency PASSED                                                                                                                                                 [ 20%]
+	test_api.py::TestMethods::test_negative_amount PASSED                                                                                                                                               [ 40%]
+	test_api.py::TestMethods::test_same_src_dest_currency PASSED                                                                                                                                        [ 60%]
+	test_api.py::TestMethods::test_src_currency PASSED                                                                                                                                                  [ 80%]
+	test_api.py::TestMethods::test_url_response_code_equals_200 PASSED                                                                                                                                  [100%]
+
+
+	=================================================================== 5 passed in 1.60s ===============================================================
+
 
 	
