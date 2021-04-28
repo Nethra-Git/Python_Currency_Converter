@@ -21,7 +21,19 @@ class TestMethods(unittest.TestCase):
     def test_url_response_code_equals_200(self):
         url = "http://data.fixer.io/api/latest?access_key=e893e2e8622b73546983d793c7af3643&symbols=SEK"
         resp = requests.get(url)
-        assert resp.status_code == 200    
+        assert resp.status_code == 200
+        
+    def test_base_currency_equals_EUR(self):
+        url = "http://data.fixer.io/api/latest?access_key=e893e2e8622b73546983d793c7af3643&symbols=SEK"
+        resp = requests.get(url)
+        data = resp.json()
+        assert data['base'] == 'EUR'   
+
+    def test_target_currency_list_equals_one(self):
+        url = "http://data.fixer.io/api/latest?access_key=e893e2e8622b73546983d793c7af3643&symbols=SEK"
+        resp = requests.get(url)
+        data = resp.json()
+        assert len(data['rates'])== 1    
        
 if __name__ == '__main__':
     unittest.main()
