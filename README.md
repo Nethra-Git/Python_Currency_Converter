@@ -47,16 +47,17 @@ The response should be like below:
 	platform linux -- Python 3.8.5, pytest-6.2.3, py-1.10.0, pluggy-0.13.1 -- /usr/bin/python3
 	cachedir: .pytest_cache
 	rootdir: /Python_Currency_Converter/app
-	collected 5 items                                                                                                                                                                                         
+	collected 7 items                                                                                                                                                                                         
 
-	test_api.py::TestMethods::test_dest_currency PASSED                                                                                                                                                 [ 20%]
-	test_api.py::TestMethods::test_negative_amount PASSED                                                                                                                                               [ 40%]
-	test_api.py::TestMethods::test_same_src_dest_currency PASSED                                                                                                                                        [ 60%]
-	test_api.py::TestMethods::test_src_currency PASSED                                                                                                                                                  [ 80%]
+	test_api.py::TestMethods::test_base_currency_equals_EUR PASSED                                                                                                                                      [ 14%]
+	test_api.py::TestMethods::test_dest_currency PASSED                                                                                                                                                 [ 28%]
+	test_api.py::TestMethods::test_negative_amount PASSED                                                                                                                                               [ 42%]
+	test_api.py::TestMethods::test_same_src_dest_currency PASSED                                                                                                                                        [ 57%]
+	test_api.py::TestMethods::test_src_currency PASSED                                                                                                                                                  [ 71%]
+	test_api.py::TestMethods::test_target_currency_list_equals_one PASSED                                                                                                                               [ 85%]
 	test_api.py::TestMethods::test_url_response_code_equals_200 PASSED                                                                                                                                  [100%]
 
-
-	=================================================================== 5 passed in 1.60s ===============================================================
+	=================================================================== 7 passed in 1.60s ===============================================================
 
 
 	
