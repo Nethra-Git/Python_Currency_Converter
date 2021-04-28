@@ -2,6 +2,7 @@
 
 from api import currency_converter
 import unittest
+import requests
 
 class TestMethods(unittest.TestCase):
 
